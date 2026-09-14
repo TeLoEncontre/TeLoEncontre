@@ -1,1 +1,432 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teloencontre</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
 
+  /* ===================== COLORES ===================== */
+  :root{
+    --bg: #0d0d0d;
+    --yellow: #ffe600;
+    --blue: #3483fa;
+    --red: #ff4053;
+    --card: #1a1a1a;
+    --line: #2e2e2e;
+    --text: #ffffff;
+    --muted: #9a9a9a;
+  }
+
+  *{ box-sizing: border-box; }
+
+  body{
+    margin: 0;
+    font-family: 'Archivo', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+  }
+
+  a{ color: inherit; text-decoration: none; }
+
+  .page{
+    width: 100%;
+    max-width: 480px;
+    padding: 40px 20px 60px;
+  }
+
+  /* ===================== HEADER ===================== */
+  .header{
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--yellow);
+    overflow: hidden;
+    margin: 0 auto 14px;
+    background: var(--card);
+  }
+
+  .avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .nombre{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 26px;
+    margin: 0 0 6px;
+  }
+
+  .bio{
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 16px;
+  }
+
+  .redes{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .red-social{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    background: var(--card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .red-social svg{
+    width: 20px;
+    height: 20px;
+  }
+
+  /* ===================== SECCIONES DE LINKS ===================== */
+  .seccion{
+    margin-bottom: 26px;
+  }
+
+  .seccion-titulo{
+    font-weight: 800;
+    font-size: 15px;
+    margin: 0 0 10px 2px;
+  }
+
+  .lista-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .link-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 15px 16px;
+    font-weight: 600;
+    font-size: 14.5px;
+  }
+
+  .link-item .flecha{
+    color: var(--blue);
+    font-size: 16px;
+    margin-left: 12px;
+    flex-shrink: 0;
+  }
+
+  .link-item.oferta{
+    border-color: var(--red);
+  }
+
+  .link-item.oferta .flecha{
+    color: var(--red);
+  }
+
+  .etiqueta{
+    background: var(--red);
+    color: white;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 3px 7px;
+    border-radius: 5px;
+    margin-left: 8px;
+  }
+
+  footer{
+    text-align: center;
+    color: var(--muted);
+    font-size: 11.5px;
+    margin-top: 30px;
+  }
+
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ===================== HEADER ===================== -->
+  <div class="header">
+    <div class="avatar">
+      <img src="logo.png" alt="logo">
+    </div>
+    <h1 class="nombre">Te Lo Encontre</h1>
+    <p class="bio">Las mejores ofertas de Mercado Libre 🔥</p>
+
+    <div class="redes">
+      <a class="red-social" href="https://www.instagram.com/telo.encontre" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="#ffe600" stroke-width="1.8"/><circle cx="12" cy="12" r="4.3" stroke="#ffe600" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.1" fill="#ffe600"/></svg>
+      </a>
+      <a class="red-social" href="https://www.tiktok.com/@telo.encontre" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15.5 2.5c.4 2.2 1.9 3.7 4 3.9v2.9c-1.4 0-2.7-.4-3.9-1.2v6c0 3.1-2.3 5.4-5.3 5.4S5 16.2 5 13.1s2.3-5.4 5.3-5.4c.3 0 .6 0 .9.1v2.9c-.3-.1-.6-.1-.9-.1a2.5 2.5 0 100 5c1.4 0 2.6-1.1 2.6-2.6V2.5h2.6z" fill="#ffe600"/></svg>
+      </a>
+      <a class="red-social" href="https://x.com/teloencontre01?s=11&t=L5ygJWE_9Ds_10D6d3k6qQ" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 4l16 16M20 4L4 20" stroke="#ffe600" stroke-width="1.9" stroke-linecap="round"/></svg>
+      </a>
+      <a class="red-social" href="https://www.facebook.com/share/1Ep3mwza13/?mibextid=wwXIfr" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M14.5 8.5h2V5.3c-.35-.05-1.55-.15-2.95-.15-2.9 0-4.9 1.8-4.9 5.05V13H6v3.6h3.15V23h3.6v-6.4h3.05l.5-3.6h-3.55v-2.4c0-1.05.3-1.7 1.75-1.7z" fill="#ffe600"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===================== SECCIONES ===================== -->
+  <!-- Copiá y pegá un bloque .seccion entero para agregar más categorías -->
+  <!-- Copiá y pegá un bloque .link-item para agregar más links dentro de una categoría -->
+  <!-- Agregá la clase "oferta" a un link-item para que se vea destacado en rojo -->
+
+  <div class="seccion">
+    <p class="seccion-titulo">🛒 Mercado Libre</p>
+    <div class="lista-links">
+      <a class="link-item" href="https://www.mercadolibre.com.ar/social/tm20260822190044268" target="_blank" rel="noopener">
+        <span>Mi tienda en Mercado Libre</span>
+        <span class="flecha">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <p class="seccion-titulo">🔥 Ofertas</p>
+    <div class="lista-links">
+      <a class="link-item" href="https://meli.la/2cKifoW" target="_blank" rel="noopener">
+        <span>5 perfumes para hombres</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2Qx8DQx" target="_blank" rel="noopener">
+        <span>5 perfumes para mujeres</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/1juFqEr" target="_blank" rel="noopener">
+        <span>Planchitas y secadores</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2frPL4s" target="_blank" rel="noopener">
+        <span>5 termos</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2sPEppc" target="_blank" rel="noopener">
+        <span>Herramientas en oferta</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/1VxkdVY" target="_blank" rel="noopener">
+        <span>Útiles en descuento</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/1YSzPqv" target="_blank" rel="noopener">
+        <span>Productos de mascota en oferta</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/1ELetUz" target="_blank" rel="noopener">
+        <span>Ofertas del día 9/9</span>
+        <span class="flecha">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <p class="seccion-titulo">⚽ Deportivo</p>
+    <div class="lista-links">
+      <a class="link-item" href="https://meli.la/1wsUsDv" target="_blank" rel="noopener">
+        <span>5 botines</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/1hydMMP" target="_blank" rel="noopener">
+        <span>5 zapatillas Nike</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/1QThChA" target="_blank" rel="noopener">
+        <span>Ropa deportiva</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2dk7ZDt" target="_blank" rel="noopener">
+        <span>Pelotas</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/1HC5TjF" target="_blank" rel="noopener">
+        <span>Padel</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/1YgvCp6" target="_blank" rel="noopener">
+        <span>Productos River Plate</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/1uBmp6B" target="_blank" rel="noopener">
+        <span>Productos Boca Juniors</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/1JfbQ4A" target="_blank" rel="noopener">
+        <span>5 productos Scaloneta en oferta</span>
+        <span class="flecha">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <p class="seccion-titulo">🧴 Cuidado personal</p>
+    <div class="lista-links">
+      <a class="link-item" href="https://meli.la/2vLJz9i" target="_blank" rel="noopener">
+        <span>5 afeitadoras claves</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2J6DtDR" target="_blank" rel="noopener">
+        <span>5 depiladoras</span>
+        <span class="flecha">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <p class="seccion-titulo">🏠 Para tu casa y habitación</p>
+    <div class="lista-links">
+      <a class="link-item" href="https://meli.la/1KqptxJ" target="_blank" rel="noopener">
+        <span>Esenciales para casa</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/1Sgjeit" target="_blank" rel="noopener">
+        <span>Espejos</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/1ApPor3" target="_blank" rel="noopener">
+        <span>Tecnología para hogar</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2ExdfWB" target="_blank" rel="noopener">
+        <span>Accesorios para tu cuarto</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2SXhwzw" target="_blank" rel="noopener">
+        <span>Sillas con descuento</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2vNH2a9" target="_blank" rel="noopener">
+        <span>Cubiertos a buen precio</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2Fr6HqU" target="_blank" rel="noopener">
+        <span>Productos para tu cocina</span>
+        <span class="flecha">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <p class="seccion-titulo">✅ Esenciales</p>
+    <div class="lista-links">
+      <a class="link-item" href="https://meli.la/18r4PHa" target="_blank" rel="noopener">
+        <span>5 relojes esenciales</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2KVD7wP" target="_blank" rel="noopener">
+        <span>Esencial para gym en casa</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2YGTTYn" target="_blank" rel="noopener">
+        <span>Mochilas esenciales para el día a día</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2Rt19ps" target="_blank" rel="noopener">
+        <span>Kit esencial de mate</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/1UyhJQ6" target="_blank" rel="noopener">
+        <span>5 productos para masajes esenciales</span>
+        <span class="flecha">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <p class="seccion-titulo">💻 Tecnología</p>
+    <div class="lista-links">
+      <a class="link-item" href="https://meli.la/2qapFfq" target="_blank" rel="noopener">
+        <span>5 parlantes para este verano</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2o3TTpJ" target="_blank" rel="noopener">
+        <span>Auriculares</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2xZgvsk" target="_blank" rel="noopener">
+        <span>5 productos para tu PC</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2oyjtE1" target="_blank" rel="noopener">
+        <span>5 productos para crear contenido</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2C1ZTnB" target="_blank" rel="noopener">
+        <span>Joysticks PS4 y PS5</span>
+        <span class="flecha">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <p class="seccion-titulo">👕 Ropa</p>
+    <div class="lista-links">
+      <a class="link-item" href="https://meli.la/1nYt1bw" target="_blank" rel="noopener">
+        <span>Ropa interior hombre</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/27irny8" target="_blank" rel="noopener">
+        <span>Ropa interior mujer</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/1SbZHjj" target="_blank" rel="noopener">
+        <span>Packs de medias</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/1i8sn4t" target="_blank" rel="noopener">
+        <span>Jeans</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2GWEN4v" target="_blank" rel="noopener">
+        <span>Buzos y sweaters</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2ueX9Cr" target="_blank" rel="noopener">
+        <span>Pantalones</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2w2uNXs" target="_blank" rel="noopener">
+        <span>Remeras cómodas en descuento</span>
+        <span class="flecha">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <p class="seccion-titulo">🚗 Para auto y moto</p>
+    <div class="lista-links">
+      <a class="link-item" href="https://meli.la/1Bcv3Tg" target="_blank" rel="noopener">
+        <span>Para tu auto</span>
+        <span class="flecha">→</span>
+      </a>
+      <a class="link-item" href="https://meli.la/2faw2vC" target="_blank" rel="noopener">
+        <span>Para tu moto</span>
+        <span class="flecha">→</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>Links de afiliado — comprando desde acá me ayudás sin pagar de más 🛒</footer>
+
+</div>
+</body>
+</html>
